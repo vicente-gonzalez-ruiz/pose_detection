@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling", "setuptools", "setuptools-scm"]
+#build-backend = "hatchling.build"
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pose_detection"
+version = "0.0.1"
+authors = [
+  { name="Vicente González Ruiz", email="vicente.gonzalez.ruiz@gmail.com" },
+]
+description = "Pose detection using MediaPipe (and probably other tools)"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[project.urls]
+"Homepage" = "https://github.com/vicente-gonzalez-ruiz/pose_detection"
+"Bug Tracker" = "https://github.com/vicente-gonzalez-ruiz/pose_detection/issues"
+
