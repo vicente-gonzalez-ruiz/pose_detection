@@ -1,2 +1,2 @@
 # pose_detection
-Pose detention using MediaPipe (https://github.com/google/mediapipe).
+Pose detection using MediaPipe (https://github.com/google/mediapipe).
